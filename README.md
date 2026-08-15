@@ -22,10 +22,7 @@ Zomato_PowerBI_Project/
 │   └── Zomato_Transformed_Data.xlsx  # cleaned + joined dataset, ready for Power BI
 │
 ├── 04_PowerBI/
-│   └── Zomato_Dashboard.pbix     # step-by-step: rebuild every visual in Power BI Desktop
-│
-├
-│                 
+│   └── Zomato_Dashboard.pbix     # step-by-step: build every visual in Power BI Desktop               
 │
 ├── 05_Documentation/
 │   └── (this README + findings — see Key Insights below)
@@ -38,12 +35,14 @@ Zomato_PowerBI_Project/
 
 ## How to use this folder
 
-1. ** Power BI:** follow `04_PowerBI/Zomato_Dashboard.pbix `
+1. **See the SQL work:** run the scripts in `02_SQL_Scripts/` in numeric order
+   against a local MySQL instance (`ZomatoDB`).
+
+2. ** Power BI:** follow `04_PowerBI/Zomato_Dashboard.pbix `
    step by step, using `03_Transformed_Data/Zomato_Transformed_Data.xlsx` as
    the source.
-2. **See the SQL work:** run the scripts in `02_SQL_Scripts/` in numeric order
-   against a local MySQL instance (`ZomatoDB`).
-3. **Present it:** `07_Presentation/Zomato_Project_Presentation.pptx`.
+   
+3. **Present it:** `06_Presentation/Zomato_Project_Presentation.pptx`.
 
 ## Data cleaning summary
 
