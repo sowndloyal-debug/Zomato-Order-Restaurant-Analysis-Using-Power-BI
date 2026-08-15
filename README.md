@@ -21,16 +21,16 @@ Zomato_PowerBI_Project/
 ├── 03_Transformed_Data/
 │   └── Zomato_Transformed_Data.xlsx  # cleaned + joined dataset, ready for Power BI
 │
-├── 04_PowerBI_Guide/
-│   └── PowerBI_Build_Guide.md     # step-by-step: rebuild every visual in Power BI Desktop
+├── 04_PowerBI/
+│   └── Zomato_Dashboard.pbix     # step-by-step: rebuild every visual in Power BI Desktop
 │
-├── 05_HTML_Dashboard/
-│   └── index.html                 # interactive dashboard preview (open in any browser)
+├
+│                 
 │
-├── 06_Documentation/
+├── 05_Documentation/
 │   └── (this README + findings — see Key Insights below)
 │
-├── 07_Presentation/
+├── 06_Presentation/
 │   └── Zomato_Project_Presentation.pptx   # stakeholder-facing summary deck
 │
 └── README.md
@@ -38,14 +38,12 @@ Zomato_PowerBI_Project/
 
 ## How to use this folder
 
-1. **See the analysis fast:** open `05_HTML_Dashboard/index.html` in any
-   browser — no install needed. Use the city chips at the top to filter.
-2. **Rebuild it in Power BI:** follow `04_PowerBI_Guide/PowerBI_Build_Guide.md`
+1. ** Power BI:** follow `04_PowerBI/Zomato_Dashboard.pbix `
    step by step, using `03_Transformed_Data/Zomato_Transformed_Data.xlsx` as
    the source.
-3. **See the SQL work:** run the scripts in `02_SQL_Scripts/` in numeric order
+2. **See the SQL work:** run the scripts in `02_SQL_Scripts/` in numeric order
    against a local MySQL instance (`ZomatoDB`).
-4. **Present it:** `07_Presentation/Zomato_Project_Presentation.pptx`.
+3. **Present it:** `07_Presentation/Zomato_Project_Presentation.pptx`.
 
 ## Data cleaning summary
 
