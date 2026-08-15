@@ -38,10 +38,10 @@ Zomato_PowerBI_Project/
 1. **See the SQL work:** run the scripts in `02_SQL_Scripts/` in numeric order
    against a local MySQL instance (`ZomatoDB`).
 
-2. ** Power BI:** follow `04_PowerBI/Zomato_Dashboard.pbix `
+2. **Power BI:** follow `04_PowerBI/Zomato_Dashboard.pbix `
    step by step, using `03_Transformed_Data/Zomato_Transformed_Data.xlsx` as
    the source.
-   
+
 3. **Present it:** `06_Presentation/Zomato_Project_Presentation.pptx`.
 
 ## Data cleaning summary
