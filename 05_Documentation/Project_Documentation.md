@@ -39,7 +39,7 @@ Join key: `restaurant_id` (1 restaurant → many orders).
    Supply and demand are broadly proportional across cities — no city is
    badly under- or over-supplied relative to its order volume.
 3. **Order amount trend over time** — Revenue is stable month over month
-   (₹1.26M–₹1.38M), a ~9% swing with no clear seasonal pattern in this
+   (Rs 1.26M-1.38M), a ~9% swing with no clear seasonal pattern in this
    dataset.
 4. **Correlation of factors affecting rating** — Price range, delivery time
    and order volume all show near-zero correlation with rating in this
@@ -47,20 +47,21 @@ Join key: `restaurant_id` (1 restaurant → many orders).
    of the operational metrics captured here.
 5. **Top 5 restaurants by total sales** — Restaurant_116, Restaurant_262,
    Restaurant_56, Restaurant_27, Restaurant_127 — all within a tight
-   ₹48,203–₹50,931 band.
-6. **Revenue by area (tree map)** — Area_A leads (₹33.9L) with the other
-   four areas (B–E) close behind, within a ~15% spread — a diversified
+   Rs 48,203-50,931 band.
+6. **Revenue by area (tree map)** — Area_A leads (Rs 33.9L) with the other
+   four areas (B-E) close behind, within a ~15% spread — a diversified
    footprint rather than one dominant locality.
 7. **Order density by city (heat map)** — Mirrors the order-share findings:
    Mumbai and Bangalore are the "hottest" cities by order count.
-8. **KPI cards** — Total Revenue ₹1.56 Cr · Avg Order Value ₹1,038.26 ·
-   15,000 orders · 52.4 min avg delivery time · 3.00★ avg rating.
-9. **Restaurant-wise sales summary** — see the sortable table in the HTML
-   dashboard and the `Zomato_Full_Data` sheet for the full 500-restaurant
-   breakdown.
-10. **Combined dashboard** — delivered as `05_HTML_Dashboard/index.html`
-    (interactive preview) with a full Power BI build path in
-    `04_PowerBI_Guide/PowerBI_Build_Guide.md`.
+8. **KPI cards** — Total Revenue Rs 1.56 Cr, Avg Order Value Rs 1,038.26,
+   15,000 orders, 52.4 min avg delivery time, 3.00 star avg rating.
+9. **Restaurant-wise sales summary** — see the `Zomato_Full_Data` sheet in
+   `03_Transformed_Data/Zomato_Transformed_Data.xlsx` for the full
+   500-restaurant breakdown, and the matching table visual in
+   `04_PowerBI/Zomato_Dashboard.pbix`.
+10. **Combined dashboard** — delivered as
+    `04_PowerBI/Zomato_Dashboard.pbix`, a single interactive Power BI report
+    combining all visuals with city/area/restaurant filters and slicers.
 
 ## Business recommendations
 - **Invest delivery/marketing capacity in Mumbai and Bangalore first** — they
@@ -76,12 +77,22 @@ Join key: `restaurant_id` (1 restaurant → many orders).
 - **Study the top 5 restaurants as a playbook** for mid-performing outlets in
   the same cities/cuisines.
 
+## Folder structure
+```
+Zomato_PowerBI_Project/
+├── 01_Raw_Data/            Zomato_Orders.csv, Zomato_Restaurants.csv
+├── 02_SQL_Scripts/         5 scripts: create DB, clean, explore, aggregate, join & export
+├── 03_Transformed_Data/    Zomato_Transformed_Data.xlsx - Power BI-ready
+├── 04_PowerBI/             Zomato_Dashboard.pbix - the finished interactive report
+├── 05_Documentation/       This file
+├── 06_Presentation/        Zomato_Project_Presentation.pptx
+└── README.md
+```
+
 ## Deliverables checklist
-- [x] MySQL database export (SQL scripts, `02_SQL_Scripts/`)
+- [x] MySQL database scripts (`02_SQL_Scripts/`) - create, clean, explore,
+      aggregate, join/export, run against `ZomatoDB`
 - [x] Transformed dataset (`03_Transformed_Data/Zomato_Transformed_Data.xlsx`)
-- [x] Power BI Report — build guide provided (`04_PowerBI_Guide/`); build the
-      `.pbix` locally following the guide, since Power BI Desktop isn't
-      available in this environment
-- [x] Interactive dashboard preview (`05_HTML_Dashboard/index.html`)
+- [x] Power BI Report - finished file at `04_PowerBI/Zomato_Dashboard.pbix`
 - [x] Project documentation (this file + root `README.md`)
-- [x] Presentation deck (`07_Presentation/`)
+- [x] Presentation deck (`06_Presentation/`)
